@@ -1,0 +1,78 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(19deg, rgb(60 61 32), rgb(22 37 21));
+    overflow: hidden;
+}
+
+h1.a {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    position: absolute;
+    color: rgb(202, 213, 201);
+    height: 8vh;
+    top: 40px;
+    white-space: nowrap;
+    font-size: 120px;
+    text-align: center;
+}
+
+div.b {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    position: absolute;
+    top: 280px;
+    color: rgb(148 158 147);
+    font-size: 60px;
+    text-align: center;
+}
+
+div.c {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    position: absolute;
+    top: 680px;
+    color: rgb(176 187 175);
+    font-size: 32px;
+    text-align: center;
+}
+
+div.d {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 390px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+button.toptracks {
+    color: rgb(219 224 231);
+    background-color: rgb(69, 94, 63);
+    border-radius: 36px;
+    height: 50px;
+    width: 180px;
+    top: 30px;
+    margin-left: 60px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+}
+
+button.toptracks:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-1px);
+}
+  
+button.toptracks:active {
+    box-shadow:none;
+    transform:translateY(0);
+}

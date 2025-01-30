@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Song Guess Game </title>
+    <link rel="stylesheet" href="static/win.css">
+</head>
+<body>
+    <h1 class="a">
+        You win!
+    </h1>
+    <div class="b">
+        Congrats on winning the game!
+    </div>
+    <div class="c">
+        Score: {{ score }}
+    </div>
+    <form action="{{ url_for('get_top_tracks') }}" method="GET">
+        <button class="toptracks" type="submit">
+            View My Top Tracks
+        </button>
+    </form>
+    <div class="d">
+        <img class="why" src="https://freedesignfile.com/upload/2016/07/Why-god-why-emoticon-icon.jpg" alt="You did it!" width="400">
+    </div>
+</body>
+</html>

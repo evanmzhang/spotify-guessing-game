@@ -1,0 +1,96 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(19deg, rgb(64 53 32), rgb(48 32 27));
+    overflow: hidden;
+}
+
+h1.a {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    position: absolute;
+    color: rgb(213, 205, 201);
+    height: 8vh;
+    top: 40px;
+    white-space: nowrap;
+    font-size: 80px;
+    text-align: center;
+}
+
+div.aa {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+div.a {
+    width: 800px;
+    position: relative;
+    top: 250px;
+    text-align: left;
+    display: flex;
+    align-self: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid rgb(150, 150, 150);
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+ol.c {
+    font-family: "Gill Sans", sans-serif;
+    position: relative;
+    color: rgb(213, 205, 201);
+    padding-right: 10px;
+    text-align: left;
+    list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    display: block;
+}
+
+ol.c a {
+    color: rgb(235, 214, 169);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+button.returngame {
+    color: rgb(219 224 231);
+    background-color: rgb(94, 82, 63);
+    border-radius: 36px;
+    height: 50px;
+    width: 180px;
+    top: 30px;
+    margin-left: 60px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+}
+
+button.returngame:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-1px);
+}
+  
+button.returngame:active {
+    box-shadow:none;
+    transform:translateY(0);
+}

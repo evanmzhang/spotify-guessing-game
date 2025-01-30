@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Song Guess Game </title>
+    <link rel="stylesheet" href="static/game.css">
+</head>
+<body>
+    <h1 class="a">
+        Song Guess Game
+    </h1>
+    <div class="b">
+        Guess which song you've listened to more between the two choices below.<br>
+        If you guess correct, you get <strong>1 point</strong>.<br>
+        If you guess incorrect, you reset at <strong>0 points</strong>.<br>
+        Get to <strong>10 points</strong> and win the game!<br>
+    </div>
+    <div class="c">
+        <p> {{ message }} </p>
+    </div>
+    <form class="buttons" action="http://localhost:5000/game" method="POST">
+        <button class="leftsong" name="choice" value="1">
+            <p> {{ song1.name }} </p>
+        </button> vs.
+        <button class="rightsong" name="choice" value="2">
+            <p> {{ song2.name }} </p>
+        </button>
+    </form>
+    <div class="d">
+        <br>Score: {{ score }}<br>
+    </div>
+    <div class="images">
+        <img class="leftsongimg" src="{{ song1.image_url }}">
+        <img class="rightsongimg" src="{{ song2.image_url }}">
+    </div>
+    <form action="{{ url_for('get_top_tracks') }}" method="GET">
+        <button class="toptracks" type="submit">
+            View My Top Tracks
+        </button>
+    </form>
+</body>
+</html>

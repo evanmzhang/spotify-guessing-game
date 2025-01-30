@@ -1,0 +1,177 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(19deg, rgb(38, 33, 43), rgb(45, 48, 56));
+    overflow: hidden;
+}
+
+h1.a {
+    width: 100%;
+    font-family: "Gill Sans", sans-serif;
+    position: absolute;
+    color: rgb(201 208 213);
+    height: 8vh;
+    top: 40px;
+    white-space: nowrap;
+    font-size: 80px;
+    text-align: center;
+}
+
+div {
+    font-family: "Gill Sans", sans-serif;
+    white-space: nowrap;
+    text-align: center;
+}
+
+div.b {
+    color: rgb(169 177 183);
+    position: absolute;
+    height: 8vh;
+    width: 100%;
+    top: 220px;
+    font-size: 16px;
+}
+
+div.c {
+    color: rgb(211 221 233);
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    top: 300px;
+    font-size: 20px;
+}
+
+div.d {
+    color: rgb(211 221 233);
+    position: absolute;
+    height: 7vh;
+    width: 100%;
+    top: 550px;
+    font-size: 26px;
+}
+
+div.images {
+    position: absolute;
+    height: 10vh;
+    width: 100%;
+    top: 550px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+img.leftsongimg {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-right: 120px;
+}
+
+img.rightsongimg {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    margin-left: 120px;
+}
+
+form.buttons {
+    color: #91a6b5;
+    position: absolute;
+    height: 8vh;
+    width: 100%;
+    top: 380px;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-self: center;
+    font-family: "Gill Sans", sans-serif;
+    font-size: 16px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button.leftsong {
+    color: rgb(219 224 231);
+    background-color: rgb(65 78 91);
+    border-radius: 20px;
+    height: 70px;
+    width: 230px;
+    margin-right: 120px;
+    position: relative;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action:manipulation;
+}
+
+button.leftsong:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-1px);
+}
+  
+button.leftsong:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
+
+button.rightsong {
+    color: rgb(219 224 231);
+    background-color: rgb(65 78 91);
+    border-radius: 20px;
+    height: 70px;
+    width: 230px;
+    margin-left: 120px;
+    position: relative;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+    transition:all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action:manipulation;
+}
+
+button.rightsong:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-1px);
+}
+  
+button.rightsong:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
+
+button.toptracks {
+    color: rgb(219 224 231);
+    background-color: rgb(65 78 91);
+    border-radius: 36px;
+    height: 50px;
+    width: 180px;
+    top: 30px;
+    margin-left: 60px;
+    position: relative;
+    align-content: center;
+    text-align: center;
+    font-family: "Gill Sans", sans-serif;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    touch-action: manipulation;
+}
+
+button.toptracks:hover {
+    box-shadow:rgb(0, 0, 0, 0.25) 0 8px 15px;
+    transform:translateY(-1px);
+}
+  
+button.toptracks:active {
+    box-shadow:none;
+    transform:translateY(0);
+}
